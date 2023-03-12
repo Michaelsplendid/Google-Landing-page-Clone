@@ -45,6 +45,9 @@ body {
   text-decoration: none;
   list-style: none;
   margin-top: -12px;
+  margin-right: 0;
+  float: left;
+  transform: translateY(-2.24rem)
 }
 .link-items a:hover {
   background-color: rgba(136, 109, 109, 0.199);
@@ -52,7 +55,7 @@ body {
 .link-items ion-icon {
   min-width: 20px;
   min-height: 20px;
-  margin-right: 20px;
+  margin-right: 5px;
   position: relative;
 }
 
@@ -74,7 +77,7 @@ a {
 
 
 /* main Nav */
-#nav-bar {
+#nav-bar, #mobile-nav {
   height: 11vh;
   display: flex;
   flex-flow: row nowrap;
@@ -294,7 +297,6 @@ footer .footer-nav a:hover {
   #nav-bar {
     display: none;
   }
-
   #mobile-nav {
     height: 10vh;
     width: 100%;
@@ -302,11 +304,20 @@ footer .footer-nav a:hover {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    
-    
     }
     #mobile-nav a {
       font-size: 13px;
+      text-transform: uppercase;
+    }
+    .link-items li {
+      text-decoration: none;
+      list-style: none;
+      margin-top: -12px;
+      margin-right: 3rem;
+      float: right;
+      transform: translateY(-2.15rem);
+    }
+    .link-item a{
       text-transform: uppercase;
     }
     #container .logo img {
